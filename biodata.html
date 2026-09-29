@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Biodata Mahasiswa</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Biodata Mahasiswa</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Beranda</a> |
+        <a href="semantic.html">Semantic HTML</a> |
+        <a href="biodata.html">Biodata</a>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Data Diri</h2>
+
+            <table border="1">
+                <tr>
+                    <th>Nama</th>
+                    <td>Cantika Fitri Hania Nasution</td>
+                </tr>
+                <tr>
+                    <th>NIM</th>
+                    <td>312510093</td>
+                </tr>
+                <tr>
+                    <th>Kelas</th>
+                    <td>I252A</td>
+                </tr>
+                <tr>
+                    <th>Program Studi</th>
+                    <td>Teknik Informatika</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Form Biodata</h2>
+
+            <form>
+                <label>Nama:</label><br>
+                <input type="text" name="nama" required minlength="3">
+                <br><br>
+
+                <label>Email:</label><br>
+                <input type="email" name="email" required>
+                <br><br>
+
+                <label>Umur:</label><br>
+                <input type="number" name="umur" min="17" max="60" required>
+                <br><br>
+
+                <label>Jenis Kelamin:</label><br>
+                <input type="radio" name="gender" value="Laki-laki"> Laki-laki
+                <input type="radio" name="gender" value="Perempuan"> Perempuan
+                <br><br>
+
+                <label>Hobi:</label><br>
+                <input type="checkbox" name="hobi" value="Desain"> Desain
+                <input type="checkbox" name="hobi" value="Musik"> Musik
+                <input type="checkbox" name="hobi" value="Fotografi"> Fotografi
+                <br><br>
+
+                <label>Program Studi:</label><br>
+                <select name="prodi">
+                    <option value="Teknik Informatika">Teknik Informatika</option>
+                    <option value="Sistem Informasi">Sistem Informasi</option>
+                    <option value="Manajemen">Manajemen</option>
+                </select>
+                <br><br>
+
+                <label>Alamat:</label><br>
+                <textarea name="alamat" rows="4" cols="30"></textarea>
+                <br><br>
+
+                <input type="submit" value="Kirim">
+                <input type="reset" value="Reset">
+
+            </form>
+        </section>
+
+        <section>
+            <h2>Multimedia</h2>
+
+            <h3>Audio</h3>
+            <audio controls src="media/audio.mp3"></audio>
+
+            <h3>Video</h3>
+            <video controls width="480">
+                <source src="media/video.mp4" type="video/mp4">
+            </video>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Teknik Informatika</p>
+    </footer>
+
+</body>
+
+</html>
